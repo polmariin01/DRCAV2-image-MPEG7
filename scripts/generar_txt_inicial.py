@@ -3,11 +3,12 @@ import os
 
 print(os.getcwd())
 
-directori = "db/UKentuckyDatabase/"
+directori = "./db/UKentuckyDatabase/"
 
 llista = os.listdir(directori)
 
-arxiu = open("db/UKentuckyDatabase/llista.txt", "w")
+arxiu = open("db/UKentuckyDatabase/UKentuckyDatabaseLlista.txt", "w")
 
 for dir in llista:
+    #print(dir)
     arxiu.write(directori + dir + "\n")
